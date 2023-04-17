@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
             label: 'average GDP per capita',
             data: [18791.13, 14480.30, 20818.45, 13856.00, 2505.17, 2569.00],
             backgroundColor: [
-                '#4AA63C'
+                '#3E7C59'
             ]
         }
     ]
@@ -90,7 +90,7 @@ var myChart = new Chart(ctx, {
             },
             subtitle: {
                 display: true,
-                text: 'For all but one year, oranges outnumbered apples'
+                text: 'The United States has consistently had the highest life expectancy among large countries.'
             }
         },
         scales: {
@@ -132,21 +132,89 @@ var ctx = document.getElementById('myChart3').getContext('2d');
                 backgroundColor:"rgb(255,165,0,0.1)",
                 borderWidth:2,
                 
+              }, { 
+                data: [
+                {x: 68.3, y: 5878},
+                ],
+                label: "Indonesia",
+                borderColor: "#A62B1F",
+                backgroundColor:"rgb(166, 43, 31,0.1)",
+                borderWidth:2,
+                
+              }, { 
+                data: [
+                {x: 71.9, y: 11461},
+                ],
+                label: "Brazil",
+                borderColor: "#7A577A",
+                backgroundColor:"rgb(122, 87, 122,0.1)",
+                borderWidth:2,
+                
+              }, { 
+                data: [
+                {x: 65.4, y: 13173},
+                ],
+                label: "Russia",
+                borderColor: "#3E7C59",
+                backgroundColor:"rgb(33, 64, 1,0.1)",
+                borderWidth:2,
+                
+              }, { 
+                data: [
+                {x: 62.6, y: 3366},
+                ],
+                label: "Pakistan",
+                borderColor: "#D96941",
+                backgroundColor:"rgb(217, 105, 65,0.1)",
+                borderWidth:2,
+                
+              }, { 
+                data: [
+                {x: 65.8, y: 1632},
+                ],
+                label: "Bangladesh",
+                borderColor: "#F2668B",
+                backgroundColor:"rgb(242, 102, 139,0.1)",
+                borderWidth:2,
+                
+              }, { 
+                data: [
+                {x: 81.1, y: 32193},
+                ],
+                label: "Japan",
+                borderColor: "#B9E041",
+                backgroundColor:"rgb(185, 244, 65,0.1)",
+                borderWidth:2,
+                
               }
             ]
           },
           options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Life expectancy and GDP in the 10 largest countries',
+                    font: {
+                        size: 18
+                    }
+                },
+                subtitle: {
+                    display: true,
+                    text: 'The two countries with the highest GDP also had the highest life expectancy.'
+                }
+            },
             scales: {
               y: {
                 title: {
                   display: true,
-                  text: 'Y axis title'
+                  text: 'Life Expectancy'
                 }
               },
               x: {
                   title: {
                       display: true,
-                      text: 'X axis title'
+                      text: 'GDP per Capita'
                   }
               }
             }
