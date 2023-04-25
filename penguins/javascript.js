@@ -10,7 +10,7 @@ var myChart = new Chart(ctx, {
                 '#75B2BF'
             ]
         }, {
-            label: 'average female flipper length in mm',
+            label: 'average female bill length in mm',
             data: [37.36, 36.91, 37.55, 46.57, 45.56],
             backgroundColor: [
                 '#037F8C'
